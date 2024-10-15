@@ -8,6 +8,7 @@
 //**************************************************************************
 
 #include <FreeRTOS_SAMD21.h>
+#include <CAN.h>
 
 //**************************************************************************
 // Type Defines and Constants
@@ -22,6 +23,9 @@
 // Some boards use SerialUSB, some use Serial
 #define SERIAL          SerialUSB //Sparkfun Samd21 Boards
 //#define SERIAL          Serial //Adafruit, other Samd21 Boards
+
+#define CAN_CS_PIN      0 // Chip select pin for the CAN bus controller
+#define CAN_INT_PIN     1 // Interrupt pin for the CAN bus controller
 
 //**************************************************************************
 // global variables
@@ -172,7 +176,17 @@ void setup()
   SERIAL.begin(115200);
 
   delay(1000); // prevents usb driver crash on startup, do not omit this
-  while (!SERIAL) ;  // Wait for serial terminal to open port before starting program
+  while (!SERIAL);  // Wait for serial terminal to open port before starting program
+  SERIAL.println("Serial Port Opened");
+
+  CAN.setPins(CAN_CS_PIN, CAN_INT_PIN);
+
+  if (!CAN.begin(500E3)) {
+    SERIAL.println("Starting CAN failed!");
+    while (1);
+  } else {
+    SERIAL.println("CAN Started at 500kbps");
+  }
 
   SERIAL.println("");
   SERIAL.println("******************************");
