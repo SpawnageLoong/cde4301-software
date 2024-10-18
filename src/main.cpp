@@ -9,8 +9,6 @@
 
 #include <Arduino.h>
 #include <FreeRTOS_SAMD21.h>
-#include <csp/csp.h>
-#include <csp/interfaces/csp_if_can.h>
 
 //**************************************************************************
 // Type Defines and Constants
