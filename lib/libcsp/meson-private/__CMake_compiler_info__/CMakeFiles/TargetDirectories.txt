@@ -1,2 +1,0 @@
-/home/richard/cde4301_ws/libcsp/builddir/meson-private/__CMake_compiler_info__/CMakeFiles/edit_cache.dir
-/home/richard/cde4301_ws/libcsp/builddir/meson-private/__CMake_compiler_info__/CMakeFiles/rebuild_cache.dir
