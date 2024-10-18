@@ -35,35 +35,12 @@
 #define CAN_CS_PIN      7 // Chip select pin for the CAN bus controller
 #define CAN_INT_PIN     2 // Interrupt pin for the CAN bus controller
 
-// Server port, the port the server listens on for incoming connections from the client
-#define CSP_SERVER_PORT 10 // Port number for the CSP server
-
 //**************************************************************************
 // global variables
 //**************************************************************************
 TaskHandle_t Handle_aTask;
 TaskHandle_t Handle_bTask;
-TaskHandle_t Handle_cspTask;
 TaskHandle_t Handle_monitorTask;
-
-int router_start(void);
-
-/* Commandline options */
-static uint8_t server_address = 0;
-static uint8_t client_address = 0;
-
-/* Test mode, check that server & client can exchange packets */
-static bool test_mode = false;
-static unsigned int successful_ping = 0;
-
-enum DeviceType {
-	DEVICE_UNKNOWN,
-	DEVICE_CAN,
-	DEVICE_KISS,
-	DEVICE_ZMQ,
-};
-
-#define __maybe_unused __attribute__((__unused__))
 
 //**************************************************************************
 // Can use these function for RTOS delays
@@ -122,57 +99,6 @@ static void threadB( void *pvParameters )
   }
 
 }
-
-//*****************************************************************
-// Create a thread that prints "Hello, CSP!" to the CAN bus every second
-// this task will run forever
-//*****************************************************************
-void csp_task(void *pvParameters) {
-		myDelayUs(test_mode ? 200000 : 1000000);
-
-		/* Send ping to server, timeout 1000 mS, ping size 100 bytes */
-		int result = csp_ping(server_address, 1000, 100, CSP_O_NONE);
-		csp_print("Ping address: %u, result %d [mS]\n", server_address, result);
-        // Increment successful_ping if ping was successful
-        if (result >= 0) {
-            ++successful_ping;
-        }
-
-		/* Send reboot request to server, the server has no actual implementation of csp_sys_reboot() and fails to reboot */
-		csp_reboot(server_address);
-		csp_print("reboot system request sent to address: %u\n", server_address);
-
-		/* Send data packet (string) to server */
-
-		/* 1. Connect to host on 'server_address', port SERVER_PORT with regular UDP-like protocol and 1000 ms timeout */
-		csp_conn_t * conn = csp_connect(CSP_PRIO_NORM, server_address, CSP_SERVER_PORT, 1000, CSP_O_NONE);
-		if (conn == NULL) {
-			/* Connect failed */
-			csp_print("Connection failed\n");
-			return;
-		}
-
-		/* 2. Get packet buffer for message/data */
-		csp_packet_t * packet = csp_buffer_get(0);
-		if (packet == NULL) {
-			/* Could not get buffer element */
-			csp_print("Failed to get CSP buffer\n");
-			return;
-		}
-
-		/* 3. Copy data to packet */
-		memcpy(packet->data, "Hello world ", 12);
-		memset(packet->data + 13, 0, 1);
-
-		/* 4. Set packet length */
-		packet->length = (strlen((char *) packet->data) + 1); /* include the 0 termination */
-
-		/* 5. Send packet */
-		csp_send(conn, packet);
-
-		/* 6. Close connection */
-		csp_close(conn);
-	}
 
 //*****************************************************************
 // Task will periodically print out useful information about the tasks running
@@ -249,42 +175,6 @@ void taskMonitor(void *pvParameters)
 }
 
 //*****************************************************************
-// 
-//*****************************************************************
-csp_iface_t * add_interface(enum DeviceType device_type, const char * device_name)
-{
-    csp_iface_t * default_iface = NULL;
-
-	if (device_type == DEVICE_KISS) {
-        csp_usart_conf_t conf = {
-			.device = device_name,
-            .baudrate = 115200, /* supported on all platforms */
-            .databits = 8,
-            .stopbits = 1,
-            .paritysetting = 0,
-		};
-        int error = csp_usart_open_and_add_kiss_interface(&conf, CSP_IF_KISS_DEFAULT_NAME, client_address, &default_iface);
-        if (error != CSP_ERR_NONE) {
-            csp_print("failed to add KISS interface [%s], error: %d\n", device_name, error);
-            exit(1);
-        }
-        default_iface->is_default = 1;
-    }
-
-	if (CSP_HAVE_LIBSOCKETCAN && (device_type == DEVICE_CAN)) {
-		int error = csp_can_socketcan_open_and_add_interface(device_name, CSP_IF_CAN_DEFAULT_NAME, client_address, 1000000, true, &default_iface);
-        if (error != CSP_ERR_NONE) {
-			csp_print("failed to add CAN interface [%s], error: %d\n", device_name, error);
-            exit(1);
-        }
-        default_iface->is_default = 1;
-    }
-
-	return default_iface;
-}
-
-
-//*****************************************************************
 
 void setup() 
 {
@@ -300,49 +190,6 @@ void setup()
   SERIAL.println("        Program start         ");
   SERIAL.println("******************************");
   SERIAL.flush();
-
-  // Initialize the csp stack
-  const char * device_name = NULL;
-	enum DeviceType device_type = DEVICE_UNKNOWN;
-	const char * rtable __maybe_unused = NULL;
-	csp_iface_t * default_iface;
-
-  /* Init CSP */
-  csp_init();
-
-  /* Start router */
-  router_start();
-
-  /* Add interface(s) */
-	default_iface = add_interface(device_type, device_name);
-
-	/* Setup routing table */
-	if (CSP_USE_RTABLE) {
-		if (rtable) {
-			int error = csp_rtable_load(rtable);
-			if (error < 1) {
-				csp_print("csp_rtable_load(%s) failed, error: %d\n", rtable, error);
-				exit(1);
-			}
-		} else if (default_iface) {
-			csp_rtable_set(0, 0, default_iface, CSP_NO_VIA_ADDRESS);
-		}
-	}
-
-    csp_print("Connection table\r\n");
-    csp_conn_print_table();
-
-    csp_print("Interfaces\r\n");
-    csp_iflist_print();
-
-	if (CSP_USE_RTABLE) {
-		csp_print("Route table\r\n");
-		csp_rtable_print();
-	}
-
-    /* Start client work */
-	csp_print("Client started\n");
-
 
   // Set the led the rtos will blink when we have a fatal rtos error
   // RTOS also Needs to know if high/low is the state that turns on the led.
@@ -363,7 +210,6 @@ void setup()
   // Also initializes a handler pointer to each task, which are important to communicate with and retrieve info from tasks
   xTaskCreate(threadA,     "Task A",       256,  NULL, tskIDLE_PRIORITY + 3, &Handle_aTask);
   xTaskCreate(threadB,     "Task B",       256,  NULL, tskIDLE_PRIORITY + 2, &Handle_bTask);
-  xTaskCreate(csp_task,    "CSP Task",     1024, NULL, 1,                    &Handle_cspTask);
   xTaskCreate(taskMonitor, "Task Monitor", 256,  NULL, tskIDLE_PRIORITY + 1, &Handle_monitorTask);
 
   // Start the RTOS, this function will never return and will schedule the tasks.
