@@ -1,0 +1,167 @@
+Build started at 2024-10-18T19:24:49.849034
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 0.61.2
+Source dir: /home/richard/cde4301_ws/libcsp
+Build dir: /home/richard/cde4301_ws/libcsp/builddir
+Build type: native build
+Project name: csp
+Project version: 2.1
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/richard/cde4301_ws/libcsp/builddir/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the host machine: cc ld.bfd 2.38
+Sanity testing C compiler: cc
+Is cross compiler: False.
+Sanity check compiler command line: cc sanitycheckc.c -o sanitycheckc.exe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/richard/cde4301_ws/libcsp/builddir/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 11.4.0 "cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0")
+C linker for the build machine: cc ld.bfd 2.38
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Pkg-config binary for 1 is not cached.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Determining dependency 'yaml-0.1' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion yaml-0.1` -> 1
+
+CMake binary for 1 is not cached
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: /usr/bin/cmake (3.22.1)
+Extracting basic cmake information
+CMake Toolchain: Calling CMake once to generate the compiler state
+Calling CMake (['/usr/bin/cmake']) in /home/richard/cde4301_ws/libcsp/builddir/meson-private/__CMake_compiler_info__ with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-G"
+  - "Ninja"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/richard/cde4301_ws/libcsp/builddir/meson-private/__CMake_compiler_info__/CMakeMesonTempToolchainFile.cmake"
+  - "."
+Try CMake generator: auto
+Calling CMake (['/usr/bin/cmake']) in /home/richard/cde4301_ws/libcsp/builddir/meson-private/cmake_yaml-0.1 with:
+  - "--trace-expand"
+  - "--trace-format=json-v1"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/richard/cde4301_ws/libcsp/builddir/meson-private/cmake_yaml-0.1/CMakeMesonToolchainFile.cmake"
+  - "."
+  -- Module search paths:    ['/', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.22
+  -- CMake architectures:    ['i386-linux-gnu', 'x86_64-linux-gnu']
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', 'lib/i386-linux-gnu', 'lib/x86_64-linux-gnu']
+Preliminary CMake check failed. Aborting.
+Run-time dependency yaml-0.1 found: NO (tried pkgconfig and cmake)
+Neither a subproject directory nor a yaml.wrap file was found.
+Subproject  yaml is buildable: NO (disabling)
+Running compile:
+Working directory:  /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpck_s8u8q
+Command line:  cc /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpck_s8u8q/testfile.c -o /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpck_s8u8q/output.exe -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lc -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library c found: YES
+Run-time dependency threads found: YES
+Pkg-config binary for 1 is cached.
+Determining dependency 'libsocketcan' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libsocketcan` -> 1
+
+CMake binary for 1 is cached.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libsocketcan found: NO (tried pkgconfig and cmake)
+Pkg-config binary for 1 is cached.
+Determining dependency 'libzmq' with pkg-config executable '/usr/bin/pkg-config'
+env[PKG_CONFIG_PATH]: 
+Called `/usr/bin/pkg-config --modversion libzmq` -> 1
+
+CMake binary for 1 is cached.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libzmq found: NO (tried pkgconfig and cmake)
+Running compile:
+Working directory:  /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmphakabzlu
+Command line:  cc /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmphakabzlu/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h" : YES 
+Running compile:
+Working directory:  /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpl8mpcbpg
+Command line:  cc /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpl8mpcbpg/testfile.c -E -P -D_FILE_OFFSET_BITS=64 -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("arpa/inet.h")
+          #error "Header 'arpa/inet.h' could not be found"
+         #endif
+        #else
+         #include <arpa/inet.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "arpa/inet.h" : YES 
+Configuring autoconfig.h using configuration
+Build targets in project: 7
+
+csp 2.1
+
+  Subprojects
+    yaml: NO Neither a subproject directory nor a yaml.wrap file was found.
+
+Found ninja-1.10.1 at /usr/bin/ninja
+Running compile:
+Working directory:  /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpty2ig9ss
+Command line:  cc /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpty2ig9ss/testfile.c -o /home/richard/cde4301_ws/libcsp/builddir/meson-private/tmpty2ig9ss/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/11/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/11/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/11/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 

@@ -1,0 +1,296 @@
+[
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_bridge.c.o -MF libcsp.so.p/src_csp_bridge.c.o.d -o libcsp.so.p/src_csp_bridge.c.o -c ../src/csp_bridge.c",
+    "file": "../src/csp_bridge.c",
+    "output": "libcsp.so.p/src_csp_bridge.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_buffer.c.o -MF libcsp.so.p/src_csp_buffer.c.o.d -o libcsp.so.p/src_csp_buffer.c.o -c ../src/csp_buffer.c",
+    "file": "../src/csp_buffer.c",
+    "output": "libcsp.so.p/src_csp_buffer.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_conn.c.o -MF libcsp.so.p/src_csp_conn.c.o.d -o libcsp.so.p/src_csp_conn.c.o -c ../src/csp_conn.c",
+    "file": "../src/csp_conn.c",
+    "output": "libcsp.so.p/src_csp_conn.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_crc32.c.o -MF libcsp.so.p/src_csp_crc32.c.o.d -o libcsp.so.p/src_csp_crc32.c.o -c ../src/csp_crc32.c",
+    "file": "../src/csp_crc32.c",
+    "output": "libcsp.so.p/src_csp_crc32.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_debug.c.o -MF libcsp.so.p/src_csp_debug.c.o.d -o libcsp.so.p/src_csp_debug.c.o -c ../src/csp_debug.c",
+    "file": "../src/csp_debug.c",
+    "output": "libcsp.so.p/src_csp_debug.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_dedup.c.o -MF libcsp.so.p/src_csp_dedup.c.o.d -o libcsp.so.p/src_csp_dedup.c.o -c ../src/csp_dedup.c",
+    "file": "../src/csp_dedup.c",
+    "output": "libcsp.so.p/src_csp_dedup.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_id.c.o -MF libcsp.so.p/src_csp_id.c.o.d -o libcsp.so.p/src_csp_id.c.o -c ../src/csp_id.c",
+    "file": "../src/csp_id.c",
+    "output": "libcsp.so.p/src_csp_id.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_iflist.c.o -MF libcsp.so.p/src_csp_iflist.c.o.d -o libcsp.so.p/src_csp_iflist.c.o -c ../src/csp_iflist.c",
+    "file": "../src/csp_iflist.c",
+    "output": "libcsp.so.p/src_csp_iflist.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_init.c.o -MF libcsp.so.p/src_csp_init.c.o.d -o libcsp.so.p/src_csp_init.c.o -c ../src/csp_init.c",
+    "file": "../src/csp_init.c",
+    "output": "libcsp.so.p/src_csp_init.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_io.c.o -MF libcsp.so.p/src_csp_io.c.o.d -o libcsp.so.p/src_csp_io.c.o -c ../src/csp_io.c",
+    "file": "../src/csp_io.c",
+    "output": "libcsp.so.p/src_csp_io.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_port.c.o -MF libcsp.so.p/src_csp_port.c.o.d -o libcsp.so.p/src_csp_port.c.o -c ../src/csp_port.c",
+    "file": "../src/csp_port.c",
+    "output": "libcsp.so.p/src_csp_port.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_qfifo.c.o -MF libcsp.so.p/src_csp_qfifo.c.o.d -o libcsp.so.p/src_csp_qfifo.c.o -c ../src/csp_qfifo.c",
+    "file": "../src/csp_qfifo.c",
+    "output": "libcsp.so.p/src_csp_qfifo.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_route.c.o -MF libcsp.so.p/src_csp_route.c.o.d -o libcsp.so.p/src_csp_route.c.o -c ../src/csp_route.c",
+    "file": "../src/csp_route.c",
+    "output": "libcsp.so.p/src_csp_route.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_service_handler.c.o -MF libcsp.so.p/src_csp_service_handler.c.o.d -o libcsp.so.p/src_csp_service_handler.c.o -c ../src/csp_service_handler.c",
+    "file": "../src/csp_service_handler.c",
+    "output": "libcsp.so.p/src_csp_service_handler.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_services.c.o -MF libcsp.so.p/src_csp_services.c.o.d -o libcsp.so.p/src_csp_services.c.o -c ../src/csp_services.c",
+    "file": "../src/csp_services.c",
+    "output": "libcsp.so.p/src_csp_services.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_sfp.c.o -MF libcsp.so.p/src_csp_sfp.c.o.d -o libcsp.so.p/src_csp_sfp.c.o -c ../src/csp_sfp.c",
+    "file": "../src/csp_sfp.c",
+    "output": "libcsp.so.p/src_csp_sfp.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_hex_dump.c.o -MF libcsp.so.p/src_csp_hex_dump.c.o.d -o libcsp.so.p/src_csp_hex_dump.c.o -c ../src/csp_hex_dump.c",
+    "file": "../src/csp_hex_dump.c",
+    "output": "libcsp.so.p/src_csp_hex_dump.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_promisc.c.o -MF libcsp.so.p/src_csp_promisc.c.o.d -o libcsp.so.p/src_csp_promisc.c.o -c ../src/csp_promisc.c",
+    "file": "../src/csp_promisc.c",
+    "output": "libcsp.so.p/src_csp_promisc.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_rdp.c.o -MF libcsp.so.p/src_csp_rdp.c.o.d -o libcsp.so.p/src_csp_rdp.c.o -c ../src/csp_rdp.c",
+    "file": "../src/csp_rdp.c",
+    "output": "libcsp.so.p/src_csp_rdp.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_csp_rdp_queue.c.o -MF libcsp.so.p/src_csp_rdp_queue.c.o.d -o libcsp.so.p/src_csp_rdp_queue.c.o -c ../src/csp_rdp_queue.c",
+    "file": "../src/csp_rdp_queue.c",
+    "output": "libcsp.so.p/src_csp_rdp_queue.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_csp_queue.c.o -MF libcsp.so.p/src_arch_posix_csp_queue.c.o.d -o libcsp.so.p/src_arch_posix_csp_queue.c.o -c ../src/arch/posix/csp_queue.c",
+    "file": "../src/arch/posix/csp_queue.c",
+    "output": "libcsp.so.p/src_arch_posix_csp_queue.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_csp_semaphore.c.o -MF libcsp.so.p/src_arch_posix_csp_semaphore.c.o.d -o libcsp.so.p/src_arch_posix_csp_semaphore.c.o -c ../src/arch/posix/csp_semaphore.c",
+    "file": "../src/arch/posix/csp_semaphore.c",
+    "output": "libcsp.so.p/src_arch_posix_csp_semaphore.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_csp_system.c.o -MF libcsp.so.p/src_arch_posix_csp_system.c.o.d -o libcsp.so.p/src_arch_posix_csp_system.c.o -c ../src/arch/posix/csp_system.c",
+    "file": "../src/arch/posix/csp_system.c",
+    "output": "libcsp.so.p/src_arch_posix_csp_system.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_csp_time.c.o -MF libcsp.so.p/src_arch_posix_csp_time.c.o.d -o libcsp.so.p/src_arch_posix_csp_time.c.o -c ../src/arch/posix/csp_time.c",
+    "file": "../src/arch/posix/csp_time.c",
+    "output": "libcsp.so.p/src_arch_posix_csp_time.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_csp_clock.c.o -MF libcsp.so.p/src_arch_posix_csp_clock.c.o.d -o libcsp.so.p/src_arch_posix_csp_clock.c.o -c ../src/arch/posix/csp_clock.c",
+    "file": "../src/arch/posix/csp_clock.c",
+    "output": "libcsp.so.p/src_arch_posix_csp_clock.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_arch_posix_pthread_queue.c.o -MF libcsp.so.p/src_arch_posix_pthread_queue.c.o.d -o libcsp.so.p/src_arch_posix_pthread_queue.c.o -c ../src/arch/posix/pthread_queue.c",
+    "file": "../src/arch/posix/pthread_queue.c",
+    "output": "libcsp.so.p/src_arch_posix_pthread_queue.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_crypto_csp_hmac.c.o -MF libcsp.so.p/src_crypto_csp_hmac.c.o.d -o libcsp.so.p/src_crypto_csp_hmac.c.o -c ../src/crypto/csp_hmac.c",
+    "file": "../src/crypto/csp_hmac.c",
+    "output": "libcsp.so.p/src_crypto_csp_hmac.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_crypto_csp_sha1.c.o -MF libcsp.so.p/src_crypto_csp_sha1.c.o.d -o libcsp.so.p/src_crypto_csp_sha1.c.o -c ../src/crypto/csp_sha1.c",
+    "file": "../src/crypto/csp_sha1.c",
+    "output": "libcsp.so.p/src_crypto_csp_sha1.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_drivers_eth_eth_linux.c.o -MF libcsp.so.p/src_drivers_eth_eth_linux.c.o.d -o libcsp.so.p/src_drivers_eth_eth_linux.c.o -c ../src/drivers/eth/eth_linux.c",
+    "file": "../src/drivers/eth/eth_linux.c",
+    "output": "libcsp.so.p/src_drivers_eth_eth_linux.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_drivers_usart_usart_linux.c.o -MF libcsp.so.p/src_drivers_usart_usart_linux.c.o.d -o libcsp.so.p/src_drivers_usart_usart_linux.c.o -c ../src/drivers/usart/usart_linux.c",
+    "file": "../src/drivers/usart/usart_linux.c",
+    "output": "libcsp.so.p/src_drivers_usart_usart_linux.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_drivers_usart_usart_kiss.c.o -MF libcsp.so.p/src_drivers_usart_usart_kiss.c.o.d -o libcsp.so.p/src_drivers_usart_usart_kiss.c.o -c ../src/drivers/usart/usart_kiss.c",
+    "file": "../src/drivers/usart/usart_kiss.c",
+    "output": "libcsp.so.p/src_drivers_usart_usart_kiss.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_lo.c.o -MF libcsp.so.p/src_interfaces_csp_if_lo.c.o.d -o libcsp.so.p/src_interfaces_csp_if_lo.c.o -c ../src/interfaces/csp_if_lo.c",
+    "file": "../src/interfaces/csp_if_lo.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_lo.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_can.c.o -MF libcsp.so.p/src_interfaces_csp_if_can.c.o.d -o libcsp.so.p/src_interfaces_csp_if_can.c.o -c ../src/interfaces/csp_if_can.c",
+    "file": "../src/interfaces/csp_if_can.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_can.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_can_pbuf.c.o -MF libcsp.so.p/src_interfaces_csp_if_can_pbuf.c.o.d -o libcsp.so.p/src_interfaces_csp_if_can_pbuf.c.o -c ../src/interfaces/csp_if_can_pbuf.c",
+    "file": "../src/interfaces/csp_if_can_pbuf.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_can_pbuf.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_eth.c.o -MF libcsp.so.p/src_interfaces_csp_if_eth.c.o.d -o libcsp.so.p/src_interfaces_csp_if_eth.c.o -c ../src/interfaces/csp_if_eth.c",
+    "file": "../src/interfaces/csp_if_eth.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_eth.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_eth_pbuf.c.o -MF libcsp.so.p/src_interfaces_csp_if_eth_pbuf.c.o.d -o libcsp.so.p/src_interfaces_csp_if_eth_pbuf.c.o -c ../src/interfaces/csp_if_eth_pbuf.c",
+    "file": "../src/interfaces/csp_if_eth_pbuf.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_eth_pbuf.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_kiss.c.o -MF libcsp.so.p/src_interfaces_csp_if_kiss.c.o.d -o libcsp.so.p/src_interfaces_csp_if_kiss.c.o -c ../src/interfaces/csp_if_kiss.c",
+    "file": "../src/interfaces/csp_if_kiss.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_kiss.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_tun.c.o -MF libcsp.so.p/src_interfaces_csp_if_tun.c.o.d -o libcsp.so.p/src_interfaces_csp_if_tun.c.o -c ../src/interfaces/csp_if_tun.c",
+    "file": "../src/interfaces/csp_if_tun.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_tun.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_i2c.c.o -MF libcsp.so.p/src_interfaces_csp_if_i2c.c.o.d -o libcsp.so.p/src_interfaces_csp_if_i2c.c.o -c ../src/interfaces/csp_if_i2c.c",
+    "file": "../src/interfaces/csp_if_i2c.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_i2c.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Ilibcsp.so.p -I. -I.. -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -fPIC -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ libcsp.so.p/src_interfaces_csp_if_udp.c.o -MF libcsp.so.p/src_interfaces_csp_if_udp.c.o.d -o libcsp.so.p/src_interfaces_csp_if_udp.c.o -c ../src/interfaces/csp_if_udp.c",
+    "file": "../src/interfaces/csp_if_udp.c",
+    "output": "libcsp.so.p/src_interfaces_csp_if_udp.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_server_client.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_server_client.p/csp_server_client.c.o -MF examples/csp_server_client.p/csp_server_client.c.o.d -o examples/csp_server_client.p/csp_server_client.c.o -c ../examples/csp_server_client.c",
+    "file": "../examples/csp_server_client.c",
+    "output": "examples/csp_server_client.p/csp_server_client.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_server_client.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_server_client.p/csp_server_client_posix.c.o -MF examples/csp_server_client.p/csp_server_client_posix.c.o.d -o examples/csp_server_client.p/csp_server_client_posix.c.o -c ../examples/csp_server_client_posix.c",
+    "file": "../examples/csp_server_client_posix.c",
+    "output": "examples/csp_server_client.p/csp_server_client_posix.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_server.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_server.p/csp_server.c.o -MF examples/csp_server.p/csp_server.c.o.d -o examples/csp_server.p/csp_server.c.o -c ../examples/csp_server.c",
+    "file": "../examples/csp_server.c",
+    "output": "examples/csp_server.p/csp_server.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_server.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_server.p/csp_server_posix.c.o -MF examples/csp_server.p/csp_server_posix.c.o.d -o examples/csp_server.p/csp_server_posix.c.o -c ../examples/csp_server_posix.c",
+    "file": "../examples/csp_server_posix.c",
+    "output": "examples/csp_server.p/csp_server_posix.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_client.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_client.p/csp_client.c.o -MF examples/csp_client.p/csp_client.c.o.d -o examples/csp_client.p/csp_client.c.o -c ../examples/csp_client.c",
+    "file": "../examples/csp_client.c",
+    "output": "examples/csp_client.p/csp_client.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_client.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_client.p/csp_client_posix.c.o -MF examples/csp_client.p/csp_client_posix.c.o.d -o examples/csp_client.p/csp_client_posix.c.o -c ../examples/csp_client_posix.c",
+    "file": "../examples/csp_client_posix.c",
+    "output": "examples/csp_client.p/csp_client_posix.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_bridge_can2udp.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_bridge_can2udp.p/csp_bridge_can2udp.c.o -MF examples/csp_bridge_can2udp.p/csp_bridge_can2udp.c.o.d -o examples/csp_bridge_can2udp.p/csp_bridge_can2udp.c.o -c ../examples/csp_bridge_can2udp.c",
+    "file": "../examples/csp_bridge_can2udp.c",
+    "output": "examples/csp_bridge_can2udp.p/csp_bridge_can2udp.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/csp_arch.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/csp_arch.p/csp_arch.c.o -MF examples/csp_arch.p/csp_arch.c.o.d -o examples/csp_arch.p/csp_arch.c.o -c ../examples/csp_arch.c",
+    "file": "../examples/csp_arch.c",
+    "output": "examples/csp_arch.p/csp_arch.c.o"
+  },
+  {
+    "directory": "/home/richard/cde4301_ws/libcsp/builddir",
+    "command": "cc -Iexamples/zmqproxy.p -Iexamples -I../examples -Iinclude -I../include -Isrc -I../src -fdiagnostics-color=always -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wextra -Werror -std=gnu11 -Os -g -pthread -Wshadow -Wcast-align -Wwrite-strings -Wpointer-arith -Wno-unused-parameter -MD -MQ examples/zmqproxy.p/zmqproxy.c.o -MF examples/zmqproxy.p/zmqproxy.c.o.d -o examples/zmqproxy.p/zmqproxy.c.o -c ../examples/zmqproxy.c",
+    "file": "../examples/zmqproxy.c",
+    "output": "examples/zmqproxy.p/zmqproxy.c.o"
+  }
+]
