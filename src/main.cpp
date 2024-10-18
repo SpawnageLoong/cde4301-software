@@ -7,8 +7,10 @@
 //
 //**************************************************************************
 
+#include <Arduino.h>
 #include <FreeRTOS_SAMD21.h>
-#include <CAN.h>
+#include <csp/csp.h>
+#include <csp/interfaces/csp_if_can.h>
 
 //**************************************************************************
 // Type Defines and Constants
@@ -178,15 +180,6 @@ void setup()
   delay(1000); // prevents usb driver crash on startup, do not omit this
   while (!SERIAL);  // Wait for serial terminal to open port before starting program
   SERIAL.println("Serial Port Opened");
-
-  CAN.setPins(CAN_CS_PIN, CAN_INT_PIN);
-
-  if (!CAN.begin(500E3)) {
-    SERIAL.println("Starting CAN failed!");
-    while (1);
-  } else {
-    SERIAL.println("CAN Started at 500kbps");
-  }
 
   SERIAL.println("");
   SERIAL.println("******************************");
